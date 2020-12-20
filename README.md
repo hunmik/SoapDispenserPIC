@@ -14,7 +14,7 @@ Also, there you can find an excellent guide how to disassemble the dispenser.
 ## Circuit
 I have reverse engineered the interesting part of the circuit. Schematics is in KiCad.
 
-![](SoapDispenser2sch.pdf)
+[](SoapDispenser2sch.pdf)
 
 A proximity sensor based on an IR LED and photodiode detects any object (preferably a hand) in front of the unit, and sends a 1sec signal to the PIC. This circuit is based on a COB, so no further details are known.
 The PIC controls the motor via a H-bridge. It is not clear why a full H-bridge is used, as the motor runs only in one direction. When hand is detected, motor starts, and makes one full rotation. Position is detected by a microswitch on the wheel. When motor is not controlled, it is shorted and stops instantly.
