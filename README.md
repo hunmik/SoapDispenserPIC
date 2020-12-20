@@ -13,4 +13,5 @@ There is another COB on the PCB controlling the RFID.
 ## Changing firmware
 Warning: Original firmware is code protected, the CP bit is set. Therefore it is not possible to save the firmware; once you have erased, it cannot be restored. (If you want to keep the original firmware the only way is to replace the original PIC with a stock one. If you should return to the original firmware, you can solder in the original PIC again.)
 CP bit can be reset only with 5V programming voltage. It is not mentioned in the PIC documentation. In the soap dispenser, the PIC is supplied from 3.6V, so to erase the CP bit, 5V must be supplied externally. As there is no information if the other circuits (the COBs) are 5V tolerant, cut the PCB track of VCC near the PIC, solder a thin wire and feed 5V directly to the PIC. Set the PICKIT programmer for external supply, and feed the same 5V voltage to the PIC. Attention: make sure that 5V power is not fed into the PCB through ISCP cable. See the schematic for details.
+
 ![](PICKIT%20pinout.jpg)
