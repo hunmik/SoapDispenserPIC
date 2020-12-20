@@ -3,11 +3,12 @@ Firmware for GOJO Soap Dispenser with PIC controller.
 
 We have several soap dispensers, and some of them failed to detect RFID. I wrote a new, custom firmware which does not use the RFID circuit, so no RFID tag is necessary any more for operation. 
 
-## PIC or Atmel?
-Some GOJO products are made with PIC, some of with Atmel controllers. For Atmel controller, see this 
+## PIC or ATTiny?
+Some GOJO products are made with PIC, some of with ATTiny48 controllers. For ATTiny48 controller, see this project:
+
 https://github.com/zapta/misc/tree/master/soap_dispenser
 
-
+Also, there you can find an excellent guide how to disassemble the dispenser.
 
 ## Circuit
 I have reverse engineered the interesting part of the circuit. Schematics is in KiCad.
